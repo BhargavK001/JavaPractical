@@ -1,0 +1,22 @@
+package Experiment;
+import java.util.Scanner;
+public class Sum_Avg {
+
+	public static void main(String[] args)
+	{
+		Scanner sc =new Scanner(System.in);
+		int num1,sum=0;
+		System.out.println("Enter how many number you want to enter : ");
+		int num = sc.nextInt();
+		for(int i=1;i<=num;i++)
+		{
+			System.out.println("Enter Number : ");
+			num1 = sc.nextInt();
+			sum = sum +num1;
+		}
+		int avg = sum/num;
+		System.out.println("Sum of number is : "+sum);
+		System.out.println("Average of Number is : "+avg);
+	}
+
+}

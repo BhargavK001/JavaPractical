@@ -1,0 +1,58 @@
+Method Constructor
+
+package Experiment;
+class Data
+{
+	int a;
+	double b;
+	int square(int a)
+	{
+		return a*a;
+	}
+	double square(double b)
+	{
+		return b*b;
+	}
+}
+
+public class Overloading {
+
+	public static void main(String[] args) {
+		Data a1=new Data();
+		Data a2= new Data();
+		int int_ans = a1.square(2);
+		System.out.println("The Square of int data type : "+int_ans);
+		double ans_double = a2.square(4.2);
+		System.out.println("The Square of Double data type : "+ans_double);
+
+	}
+
+}
+--------------------------------------------------------------------
+Method Constructor Overloading
+
+package Experiment;
+class Data
+{
+	Data(int a,int b)
+	{
+		int sum = a+b;
+		System.out.println("Addition of int datatype : "+sum);
+	}
+	Data(double a,double b)
+	{
+		double sum = a+b;
+		System.out.println("Addition of double datatype : "+sum);
+	}
+}
+
+public class Overloading {
+
+	public static void main(String[] args) {
+		Data a1=new Data(2,2);
+		Data a2= new Data(2.5,2.5);
+	
+	}
+
+}
+

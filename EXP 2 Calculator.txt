@@ -1,0 +1,68 @@
+package Experiment;
+import java.util.Scanner;
+public class Calculator {
+
+	public static void main(String[] args) 
+	{
+		int num,num1,choice;
+		Scanner sc = new Scanner(System.in);
+		do{
+			System.out.println("Enter Your Choice : ");
+			System.out.println("1. Addition");
+			System.out.println("2. Subtract");
+			System.out.println("3. Multiply");
+			System.out.println("4. Division");
+			System.out.println("5. End");
+			choice = sc.nextInt();
+		switch (choice) {
+		case 1:
+		{
+			System.out.println("Enter Number 1 :");
+			num = sc.nextInt();
+			System.out.println("Enter Number 2 :");
+			num1 = sc.nextInt();
+			int sum= num+num1;
+			System.out.println("Addition of two number is : "+sum);
+			break;
+		}
+		case 2:
+		{
+			System.out.println("Enter Number 1 :");
+			num = sc.nextInt();
+			System.out.println("Enter Number 2 :");
+			num1 = sc.nextInt();
+			int sub= num-num1;
+			System.out.println("Subtract of two number is : "+sub);
+			break;
+		}
+		case 3:
+		{
+			System.out.println("Enter Number 1 :");
+			num = sc.nextInt();
+			System.out.println("Enter Number 2 :");
+			num1 = sc.nextInt();
+			int mul= num*num1;
+			System.out.println("Multiply of two number is : "+mul);
+			break;
+		}
+		case 4:
+		{
+			System.out.println("Enter Number 1 :");
+			num = sc.nextInt();
+			System.out.println("Enter Number 2 :");
+			num1 = sc.nextInt();
+			int div= num/num1;
+			System.out.println("Division of two number is : "+div);
+			break;
+		}
+		case 5:
+			System.out.println("Terminating...");
+			break;
+		default:
+		{
+			System.out.println("Incorrect Entry");
+		}
+		}
+	}while (choice!=5);
+	}
+}

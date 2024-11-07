@@ -1,0 +1,64 @@
+package Experiment;
+import java.util.Scanner;
+class Rect
+{
+	double length,width,area;
+	String colour;
+	public void get_length(double length)
+	{
+		this.length = length;
+	}
+	public void get_width(double width)
+	{
+		this.width=width;
+	}
+	public void get_colour(String colour)
+	{
+		this.colour=colour;
+	}
+	public double find_area()
+	{
+		return(length*width);
+	}
+	public String return_colour()
+	{
+		return colour;
+	}
+}
+public class Rectangle {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Rect r1 = new Rect();
+		Rect r2 = new Rect();
+		double length,width;
+		String colour;
+		System.out.println("Enter length of First Rectangle : ");
+		length = sc.nextDouble();
+		System.out.println("Enter width of First Rectangle : ");
+		width = sc.nextDouble();
+		System.out.println("Enter colour of First Rectangle : ");
+		colour = sc.next();
+		r1.get_length(length);
+		r1.get_width(width);
+		r1.get_colour(colour);
+		
+		System.out.println("Enter length of Second Rectangle : ");
+		length = sc.nextDouble();
+		System.out.println("Enter width of Second Rectangle : ");
+		width = sc.nextDouble();
+		System.out.println("Enter colour of Second Rectangle : ");
+		colour = sc.next();
+		r2.get_length(length);
+		r2.get_width(width);
+		r2.get_colour(colour);
+		if(r1.find_area()==r2.find_area() && r1.return_colour().equals(r2.return_colour()))
+		{
+			System.out.println("Rectangle are Matched");
+		}
+		else
+		{
+			System.out.println("Rectangle are not Matched");
+		}
+	}
+
+}
